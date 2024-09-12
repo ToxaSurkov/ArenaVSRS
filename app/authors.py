@@ -47,5 +47,31 @@ AUTHORS = """
             <img src="https://komarev.com/ghpvc/?username=DmitryRyumin&style=flat-square" alt="" style="margin-bottom: 6px;" />
         </div>
     </div>
+
+    <div style="flex-basis: 40%;">
+        <a href="https://github.com/MiSTeR1995">
+            <img src="https://readme-typing-svg.demolab.com?font=Roboto&duration=1500&pause=100&color=3081F7&vCenter=true&multiline=true&width=435&height=70&lines=Dr.+Alexandr+Axyonov;Artificial+Intelligence+Researcher" alt="DmitryRyumin" />
+        </a>
+        <div style="display: flex; margin-bottom: 6px;">
+            <a href="https://www.webofscience.com/wos/author/record/AAH-3902-2021" style="margin-right: 6px;">
+                <img src="https://img.shields.io/badge/Web%20of%20Science-5D34BF??&style=flat-square&logo=clarivate&logoColor=white" alt="" />
+            </a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57203963345" style="margin-right: 6px;">
+                <img src="https://img.shields.io/badge/Scopus-%23E9711C.svg?&style=flat-square&logo=scopus&logoColor=white" alt="" />
+            </a>
+            <a href="https://scholar.google.com/citations?user=Hs95wd4AAAAJ" style="margin-right: 6px;">
+                <img src="https://img.shields.io/badge/Google%20Scholar-%234285F4.svg?&style=flat-square&logo=google-scholar&logoColor=white" alt="" />
+            </a>
+            <a href="https://orcid.org/0000-0002-7479-2851">
+                <img src="https://img.shields.io/badge/ORCID-0000--0002--7479--2851-green.svg?&style=flat-square&logo=orcid&logoColor=white" alt="" />
+            </a>
+            <a href="https://t.me/MiSTe_R" style="margin-right: 6px;">
+                <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white" alt="" />
+            </a>
+        </div>
+        <a href="https://github.com/MiSTeR1995" style="display: inline-block;">
+            <img src="https://github-stats-alpha.vercel.app/api?username=MiSTeR1995&cc=3081F7&tc=FFFFFF&ic=FFFFFF&bc=FFFFFF" alt="" />
+        </a>
+    </div>
 </div>
 """
