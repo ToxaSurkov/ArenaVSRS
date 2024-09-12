@@ -1,0 +1,100 @@
+.toast-body.error {
+    display: none;
+}
+
+.noti_err {
+    color: #f97316;
+}
+.noti_true {
+    color: #006900;
+}
+
+div.dataframe table > thead,
+div.dataframe table > tbody {
+    width: auto !important;
+    display: table-header-group;
+}
+
+div.dataframe div.table-wrap {
+    height: auto !important;
+}
+
+div.app-flex-container {
+    display: flex;
+    gap: 6px;
+}
+
+div.vacancy_name-container {
+    gap: 4px;
+}
+
+div.vacancy_name-container > div.metadata_vacancy-logo {
+    display: contents;
+    min-width: none;
+}
+
+div.vacancy_name-container > div.metadata_vacancy-logo button {
+    width: fit-content;
+    cursor: default;
+}
+
+div.vacancy_name-container > div.metadata_vacancy-logo div.image-container {
+    width: fit-content;
+}
+
+div.vacancy_name-container > div.metadata_vacancy-logo div.image-frame > img {
+    height: 48px;
+}
+
+div.vacancy_description {
+    text-align: justify;
+    font-size: 16px;
+}
+
+div.dropdown-keyskills > label > div.wrap {
+    border: 0px;
+    box-shadow: none;
+}
+
+div.dropdown-keyskills > label > div.wrap > div > div.token,
+div.dropdown-keyskills > label > div.wrap > div > div.secondary-wrap > input {
+    cursor: default;
+}
+
+.calculate_rating,
+.auth {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: var(--button-border-width) solid var(--button-primary-border-color);
+    background: var(--button-primary-background-fill);
+    color: var(--button-primary-text-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.calculate_rating[disabled],
+.auth[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.calculate_rating:hover:not([disabled]),
+.auth:hover:not([disabled]) {
+    border-color: var(--button-primary-border-color-hover);
+    background: var(--button-primary-background-fill-hover);
+    color: var(--button-primary-text-color-hover);
+}
+
+.calculate_rating:active:not([disabled]),
+.auth:active:not([disabled]) {
+    transform: scale(0.98);
+}
+
+div.dataframe span.wrapper_subject > span.err {
+    color: #f97316;
+}
