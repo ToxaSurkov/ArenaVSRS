@@ -5,6 +5,7 @@ Description: Data initialization.
 License: MIT License
 """
 
+import time
 import pandas as pd
 
 # Importing necessary components for the Gradio app
