@@ -19,7 +19,7 @@ jobs:
 
       # Step 2: Add SSH key for remote server access
       - name: Add SSH key
-        uses: webfactory/ssh-agent@v0.5.4
+        uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
