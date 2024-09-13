@@ -29,7 +29,7 @@ jobs:
           ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -p ${{ secrets.REMOTE_PORT }} << 'EOF'
           cd /home/${{ secrets.REMOTE_USER }}
           cd arena
-          docker build -t arena-app-new .
+          sudo docker build -t arena-app-new .
           EOF
 
       # Step 4: Stop old container and run new Docker container on the server
@@ -37,8 +37,8 @@ jobs:
         run: |
           ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -p ${{ secrets.REMOTE_PORT }}  << 'EOF'
           if [ "$(docker ps -q -f name=arena-app)" ]; then
-            docker stop arena-app
-            docker rm arena-app
+            sudo docker stop arena-app
+            sudo docker rm arena-app
           fi
-          docker run -d --name arena-app -p 7777:7860 arena-app-new
+          sudo docker run -d --name arena-app -p 7777:7860 arena-app-new
           EOF
