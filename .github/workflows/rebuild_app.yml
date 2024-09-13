@@ -26,7 +26,7 @@ jobs:
       # Step 3: Clone repository and build the new Docker container on the remote server
       - name: Build new Docker container on the remote server
         run: |
-          ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} << 'EOF'
+          ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -p ${{ secrets.REMOTE_PORT }} << 'EOF'
           cd /home/${{ secrets.REMOTE_USER }}
           cd /arena
           docker build -t arena-app-new .
@@ -35,10 +35,10 @@ jobs:
       # Step 4: Stop old container and run new Docker container on the server
       - name: Stop old container and run new Docker container on the server
         run: |
-          ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}  << 'EOF'
+          ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -p ${{ secrets.REMOTE_PORT }}  << 'EOF'
           if [ "$(docker ps -q -f name=arena-app)" ]; then
             docker stop arena-app
             docker rm arena-app
           fi
-          docker run -d --name arena-app -p 7860:7860 arena-app-new
+          docker run -d --name arena-app -p 7777:7860 arena-app-new
           EOF
