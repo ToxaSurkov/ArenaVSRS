@@ -40,5 +40,5 @@ jobs:
             sudo docker stop arena-app
             sudo docker rm arena-app
           fi
-          sudo docker run -d --name arena-app -p 7860:7860 arena-app-new
+          sudo docker run -d -v /home/${{ secrets.REMOTE_USER }}/arena/data:/app/data --name arena-app -p 7860:7860 arena-app-new
           EOF
