@@ -28,7 +28,7 @@ jobs:
         run: |
           ssh -t -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} -p ${{ secrets.REMOTE_PORT }} << 'EOF'
           cd /home/${{ secrets.REMOTE_USER }}
-          cd /arena
+          cd arena
           docker build -t arena-app-new .
           EOF
 
